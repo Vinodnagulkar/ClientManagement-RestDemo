@@ -15,10 +15,10 @@ public class ClientServiceImpl
 static List<Client>clientList=new ArrayList<Client>();
 
 static {
-	clientList.add(new Client(1, "JOHN DHEERE"));
-	clientList.add(new Client(2, "BNY"));
-	clientList.add(new Client(3, "Schlumberger"));
-}
+		clientList.add(new Client(1, "JOHN DHEERE"));
+		clientList.add(new Client(2, "BNY"));
+		clientList.add(new Client(3, "SCHLUMBERGER"));
+	   }
 
 	
 	public List<Client>getClients()
@@ -27,9 +27,9 @@ static {
 		return clientList;
 	}
 	
-	public void addClient(Client client) {
+	public void addClient(Client client) 
+	{
 		clientList.add(client);
-		
 	}
 	
 	public void updateClient(Client client) {
@@ -50,7 +50,8 @@ static {
 	public void deleteClient(int id) 
 	{
 		Iterator<Client>itr=clientList.iterator();
-		while (itr.hasNext()) {
+		while (itr.hasNext())
+		{
 			Client c = (Client) itr.next();
 			if(c.getClientId()==id)
 				itr.remove();

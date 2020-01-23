@@ -23,13 +23,15 @@ public class ClientController
 	ClientServiceImpl clientServiceImpl;
 	
 	@GetMapping("client/getClients")
-	public List<Client>getAllClients(){
-		
+	public List<Client>getAllClients()
+	{
+		System.out.println("inside GetClient+++++++++++++++++++");
 		return clientServiceImpl.getClients() ;
 	}
 	@PostMapping("client/addClient")
 	public void addClient(@RequestBody Client client) 
 	{
+		System.out.println("inside AddClient+++++++++++++++++++");
 		clientServiceImpl.addClient(client);
 	}
 	@PutMapping("client/updateClient")

@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ClientManagementApplication {
 	public static void main(String[] args) {
 			SpringApplication.run(ClientManagementApplication.class, args);
-			System.out.println("\n\nClientManagement Application started...!");
+			System.out.println("\nClientManagement Application started...!");
 		}
 
 }
